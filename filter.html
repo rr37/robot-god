@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
+</head>
+
+<body>
+  <!-- 表頭 -->
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgba(127, 255, 212, 0.795)">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Robot God</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="./filter.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./favorite.html">Favorite</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./recipe.html">Recipe</a>
+          </li>
+        </ul>
+        <!-- <form class="d-flex" id="search-form">
+          <input class="form-control me-2" id="search-input" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form> -->
+      </div>
+    </div>
+  </nav>
+
+  <!-- <figure class="god"><img src="https://robohash.org/吳東昇.png?size=300x300&set=set1" alt=""></figure> -->
+
+
+
+  <!-- 上帝 -->
+  <div class="container-fluid">
+    <figure class="god godbody"><img src="./image/godbody.gif" alt=""></figure>
+    <figure class="god godhand"><img src="./image/godhand.gif" alt=""></figure>
+    <figure class="god merge invisible"><img src="./image/merge.gif" alt=""></figure>
+    <figure class="god bigbang invisible"><img src="./image/bigbang.gif" alt=""></figure>
+  </div>
+
+  <!-- 混合按鈕 -->
+  <div class="d-grid col-3 position-absolute bottom-0 start-50 translate-middle">
+    <button class="btn-lg btn-outline-secondary" id="merge">Merge</button>
+  </div>
+
+  <!-- 結尾區域 -->
+  <div class="container-fluid invisible result-area">
+    <div id="addRobot2" class="addRobot">
+      +<figure id="resultPlus"></figure>
+    </div>
+    <figure class="result godshow"><img src="./image/godshow.gif" alt=""></figure>
+    <figure class="result newcharacter"><img src="./image/newcharacter.gif" alt=""></figure>
+    <div class="d-grid col-3 position-absolute bottom-0 end-0 translate-middle">
+      <button class="btn-lg btn-outline-secondary m-2 add-recipe-btn" id="">Add to Recipe</button>
+      <button class="btn-lg btn-outline-secondary m-2 try-again-btn" id="">Try Again</button>
+    </div>
+  </div>
+
+  <!-- 加入機器人區 -->
+
+  <div class="container-fluid add-robot-area">
+    <!-- <div class="add-Robot-Area"> -->
+    <div id="addRobot1" class="addRobot" data-bs-toggle="modal" data-bs-target="#filterModal">
+      +<div id="L">L</div>
+      <figure id="leftPlus"></figure>
+    </div>
+    <div id="addRobot2" class="addRobot" data-bs-toggle="modal" data-bs-target="#filterModal">
+      +<div id="R">R</div>
+      <figure id="rightPlus"></figure>
+    </div>
+    <!-- </div> -->
+  </div>
+
+
+  <!-- 篩選器modal -->
+
+  <div class="modal fade" tabindex="-1" id="filterModal">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title">Robot Feature</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body d-flex justify-content-around">
+          <!-- 篩選特徵 -->
+          <div class="filterqq p-2 flex-fill d-flex flex-column">
+            <!-- <form class="d-flex" id="search-form">
+              <input class="form-control me-2" id="search-input" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form> -->
+            <!-- <h3></h3> -->
+            <h5>headDeco</h5>
+            <div class="d-flex" id="headDeco">
+              <figure class="img-button" id="empty">
+                <img src="https://robohash.org/repellatvoluptateomnis.png?size=300x300&set=set1" alt="">
+              </figure>
+              <figure class="img-button" id="button">
+                <img src="https://robohash.org/atautaliquid.png?size=300x300&set=set1" alt="">
+              </figure>
+              <figure class="img-button" id="hair">
+                <img src="https://robohash.org/iustoitaqueaccusantium.png?size=300x300&set=set1" alt="">
+              </figure>
+              <figure class="img-button" id="horn">
+                <img src="https://robohash.org/excepturiaperiamminus.png?size=300x300&set=set1" alt="">
+              </figure>
+              <figure class="img-button" id="radar">
+                <img src="https://robohash.org/providentiureaspernatur.png?size=300x300&set=set1" alt="">
+              </figure>
+              <figure class="img-button" id="tower">
+                <img src="https://robohash.org/nemoitaquequia.png?size=300x300&set=set1" alt="">
+              </figure>
+              <figure class="img-button" id="seven">
+                <img src="https://robohash.org/sunteaet.png?size=300x300&set=set1" alt="">
+              </figure>
+              <figure class="img-button" id="antenna">
+                <img src="https://robohash.org/sequinatusnemo.png?size=300x300&set=set1" alt="">
+              </figure>
+              <figure class="img-button" id="hat">
+                <img src="https://robohash.org/nobismolestiaelaudantium.png?size=300x300&set=set1" alt="">
+              </figure>
+            </div>
+            <h5>headShape</h5>
+            <div class="d-flex headShape flex-wrap" id="headShape">
+              <figure class="img-button" id="missile">
+                <img src="https://robohash.org/repellatvoluptateomnis.png?size=300x300&set=set1" alt="">
+              </figure>
+              <figure class="img-button" id="onigiri">
+                <img src="https://robohash.org/atautaliquid.png?size=300x300&set=set1" alt="">
+              </figure>
+              <figure class="img-button" id="konjac">
+                <img src="https://robohash.org/totampossimusblanditiis.png?size=300x300&set=set1" alt="">
+              </figure>
+              <figure class="img-button" id="eraser">
+                <img src="https://robohash.org/adquibusdamconsequatur.png?size=300x300&set=set1" alt="">
+              </figure>
+              <figure class="img-button" id="pedal">
+                <img src="https://robohash.org/iustoitaqueaccusantium.png?size=300x300&set=set1" alt="">
+              </figure>
+              <figure class="img-button" id="heart">
+                <img src="https://robohash.org/incorruptieaque.png?size=300x300&set=set1" alt="">
+              </figure>
+              <figure class="img-button" id="can">
+                <img src="https://robohash.org/etvoluptasid.png?size=300x300&set=set1" alt="">
+              </figure>
+              <figure class="img-button" id="egg">
+                <img src="https://robohash.org/providentiureaspernatur.png?size=300x300&set=set1" alt="">
+              </figure>
+              <figure class="img-button" id="pharaoh">
+                <img src="https://robohash.org/nemoitaquequia.png?size=300x300&set=set1" alt="">
+              </figure>
+              <figure class="img-button" id="stone">
+                <img src="https://robohash.org/culpaquaedignissimos.png?size=300x300&set=set1" alt="">
+              </figure>
+            </div>
+            <h5>color</h5>
+            <div class="d-flex color flex-wrap" id="color">
+              <figure class="img-button" id="blue">
+                <figure id="blue"></figure>
+              </figure>
+              <figure class="img-button" id="darkGray">
+                <figure id="darkGray"></figure>
+              </figure>
+              <figure class="img-button" id="gray">
+                <figure id="gray"></figure>
+              </figure>
+              <figure class="img-button" id="green">
+                <figure id="green"></figure>
+              </figure>
+              <figure class="img-button" id="yellow">
+                <figure id="yellow"></figure>
+              </figure>
+              <figure class="img-button" id="brown">
+                <figure id="brown"></figure>
+              </figure>
+              <figure class="img-button" id="orange">
+                <figure id="orange"></figure>
+              </figure>
+              <figure class="img-button" id="pink">
+                <figure id="pink"></figure>
+              </figure>
+              <figure class="img-button" id="red">
+                <figure id="red"></figure>
+              </figure>
+              <figure class="img-button" id="purple">
+                <figure id="purple"></figure>
+              </figure>
+            </div>
+            <h5>eye</h5>
+            <div class="d-flex eye flex-wrap" id="eye">
+              <figure class="img-button" id="mailbox">
+                <img src="https://robohash.org/repellatvoluptateomnis.png?size=300x300&set=set1" alt="">
+              </figure>
+              <figure class="img-button" id="sinkOne">
+                <img src="https://robohash.org/atautaliquid.png?size=300x300&set=set1" alt="">
+              </figure>
+              <figure class="img-button" id="handle">
+                <img src="https://robohash.org/adquibusdamconsequatur.png?size=300x300&set=set1" alt="">
+              </figure>
+              <figure class="img-button" id="binoculars">
+                <img src="https://robohash.org/officiisofficiaenim.png?size=300x300&set=set1" alt="">
+              </figure>
+              <figure class="img-button" id="sinkTwo">
+                <img src="https://robohash.org/iustoitaqueaccusantium.png?size=300x300&set=set1" alt="">
+              </figure>
+              <figure class="img-button" id="glass">
+                <img src="https://robohash.org/incorruptieaque.png?size=300x300&set=set1" alt="">
+              </figure>
+              <figure class="img-button" id="laser">
+                <img src="https://robohash.org/saepesitillum.png?size=300x300&set=set1" alt="">
+              </figure>
+              <figure class="img-button" id="telescope">
+                <img src="https://robohash.org/sequinatusnemo.png?size=300x300&set=set1" alt="">
+              </figure>
+              <figure class="img-button" id="spy">
+                <img src="https://robohash.org/culpaomnisipsa.png?size=300x300&set=set1" alt="">
+              </figure>
+              <figure class="img-button" id="sinkRed">
+                <img src="https://robohash.org/debitisquaereprehenderit.png?size=300x300&set=set1" alt="">
+              </figure>
+            </div>
+            <h5>Nose / Mustache</h5>
+            <div class="d-flex noseOrMustache flex-wrap" id="noseOrMustache">
+              <figure class="img-button" id="nose">
+                <img src="https://robohash.org/repellatvoluptateomnis.png?size=300x300&set=set1" alt="">
+              </figure>
+              <figure class="img-button" id="mustache">
+                <img src="https://robohash.org/officiisofficiaenim.png?size=300x300&set=set1" alt="">
+              </figure>
+              <figure class="img-button" id="transparent">
+                <img src="https://robohash.org/incorruptieaque.png?size=300x300&set=set1" alt="">
+              </figure>
+            </div>
+            <h5>mouse</h5>
+            <div class="d-flex mouse flex-wrap" id="mouse">
+              <figure class="img-button" id="normal">
+                <img src="https://robohash.org/repellatvoluptateomnis.png?size=300x300&set=set1" alt="">
+              </figure>
+              <figure class="img-button" id="teeth">
+                <img src="https://robohash.org/atautaliquid.png?size=300x300&set=set1" alt="">
+              </figure>
+              <figure class="img-button" id="anopy">
+                <img src="https://robohash.org/totampossimusblanditiis.png?size=300x300&set=set1" alt="">
+              </figure>
+              <figure class="img-button" id="monitor">
+                <img src="https://robohash.org/adquibusdamconsequatur.png?size=300x300&set=set1" alt="">
+              </figure>
+              <figure class="img-button" id="noWord">
+                <img src="https://robohash.org/officiisofficiaenim.png?size=300x300&set=set1" alt="">
+              </figure>
+              <figure class="img-button" id="jail">
+                <img src="https://robohash.org/similiqueitaqueenim.png?size=300x300&set=set1" alt="">
+              </figure>
+              <figure class="img-button" id="shock">
+                <img src="https://robohash.org/nemoitaquequia.png?size=300x300&set=set1" alt="">
+              </figure>
+              <figure class="img-button" id="paperHole">
+                <img src="https://robohash.org/quilaborumvitae.png?size=300x300&set=set1" alt="">
+              </figure>
+              <figure class="img-button" id="smile">
+                <img src="https://robohash.org/eumeosexplicabo.png?size=300x300&set=set1" alt="">
+              </figure>
+              <figure class="img-button" id="coinHole">
+                <img src="https://robohash.org/quiomnisperferendis.png?size=300x300&set=set1" alt="">
+              </figure>
+            </div>
+            <h5>body</h5>
+            <div class="d-flex body flex-wrap" id="body">
+              <figure class="img-button" id="normal">
+                <img src="https://robohash.org/repellatvoluptateomnis.png?size=300x300&set=set1" alt="">
+              </figure>
+              <figure class="img-button" id="overweight">
+                <img src="https://robohash.org/atautaliquid.png?size=300x300&set=set1" alt="">
+              </figure>
+              <figure class="img-button" id="heart">
+                <img src="https://robohash.org/totampossimusblanditiis.png?size=300x300&set=set1" alt="">
+              </figure>
+              <figure class="img-button" id="lean">
+                <img src="https://robohash.org/adquibusdamconsequatur.png?size=300x300&set=set1" alt="">
+              </figure>
+              <figure class="img-button" id="bottle">
+                <img src="https://robohash.org/officiisofficiaenim.png?size=300x300&set=set1" alt="">
+              </figure>
+              <figure class="img-button" id="can">
+                <img src="https://robohash.org/incorruptieaque.png?size=300x300&set=set1" alt="">
+              </figure>
+              <figure class="img-button" id="chubby">
+                <img src="https://robohash.org/saepesitillum.png?size=300x300&set=set1" alt="">
+              </figure>
+              <figure class="img-button" id="onigiri">
+                <img src="https://robohash.org/nemoitaquequia.png?size=300x300&set=set1" alt="">
+              </figure>
+              <figure class="img-button" id="skinny">
+                <img src="https://robohash.org/officiisautemiusto.png?size=300x300&set=set1" alt="">
+              </figure>
+              <figure class="img-button" id="slim">
+                <img src="https://robohash.org/culpaomnisipsa.png?size=300x300&set=set1" alt="">
+              </figure>
+            </div>
+
+          </div>
+          <!-- robot list -->
+          <div class="d-flex flex-wrap justify-content-center" id="friend-lists">
+            <div class="d-flex flex-wrap justify-content-center" id="friend-list">
+            </div>
+            <!-- paginator -->
+            <nav aria-label="Page navigation">
+              <ul class="pagination justify-content-center" id="paginator">
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+              </ul>
+            </nav>
+          </div>
+
+
+          </img>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- robot detail modal -->
+  <div class="modal fade" tabindex="-1" id="myModal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Modal title</h5>
+          <button class="btn btn-primary" data-bs-target="#filterModal" data-bs-toggle="modal"
+            data-bs-dismiss="modal"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+              class="bi bi-reply" viewBox="0 2 16 16">
+              <path
+                d="M6.598 5.013a.144.144 0 0 1 .202.134V6.3a.5.5 0 0 0 .5.5c.667 0 2.013.005 3.3.822.984.624 1.99 1.76 2.595 3.876-1.02-.983-2.185-1.516-3.205-1.799a8.74 8.74 0 0 0-1.921-.306 7.404 7.404 0 0 0-.798.008h-.013l-.005.001h-.001L7.3 9.9l-.05-.498a.5.5 0 0 0-.45.498v1.153c0 .108-.11.176-.202.134L2.614 8.254a.503.503 0 0 0-.042-.028.147.147 0 0 1 0-.252.499.499 0 0 0 .042-.028l3.984-2.933zM7.8 10.386c.068 0 .143.003.223.006.434.02 1.034.086 1.7.271 1.326.368 2.896 1.202 3.94 3.08a.5.5 0 0 0 .933-.305c-.464-3.71-1.886-5.662-3.46-6.66-1.245-.79-2.527-.942-3.336-.971v-.66a1.144 1.144 0 0 0-1.767-.96l-3.994 2.94a1.147 1.147 0 0 0 0 1.946l3.994 2.94a1.144 1.144 0 0 0 1.767-.96v-.667z" />
+            </svg></button>
+
+
+        </div>
+        <div class="modal-body d-flex justify-content-around">
+          <img class="cols-sm-7 modal-avatar"
+            src="https://robohash.org/repellatvoluptateomnis.png?size=300x300&set=set1">
+          <div class="cols-sm-3 modal-info">123</div>
+          </img>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- script -->
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+  <script src="filter.js"></script>
+
+  <!-- replit script -->
+  <!--   <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script> -->
+
+
+</body>
+
+</html>
